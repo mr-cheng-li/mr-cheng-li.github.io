@@ -6,12 +6,18 @@ Prior to joining USTC, I was an associated researcher with my PhD supervisor [Ro
 
 In 2016, I obtained my PhD degree from the Dependable Systems Group at the [Max Planck Institute for Software Sytems (MPI-SWS)](www.mpi-sws.org) and [Saarland University](http://www.cs.uni-saarland.de/) in Germany. Before studying at MPI-SWS, I obtained my bachelor degree from [Nankai University](http://nankai.en.school.cucas.cn/) in 2009.
 
-### Open positions
-I am looking for talent prospective students who are interested in overcoming challenges in systems research, and want to pursue graduate degrees. In addition, I am happy to supervise bachelor thesis projects. Feel free to send messages to chenglinkcs@gmail.com, if you want to contact me or you can stop by my office (Room 601, High Performance Computing Center, East Campus, USTC).
+### Collaborations
+
+It is my great honor to work with the following brilliant computer scientists (sorted by last name in an alphabetical order): [Allen Clement](http://www.mpi-sws.org/~aclement/), [Miguel Castro](https://www.microsoft.com/en-us/research/people/mcastro/), [Pedro Fonseca](https://homes.cs.washington.edu/~pfonseca/), [Johannes Gehrke](http://www.cs.cornell.edu/johannes/), [Zhenyu Guo](https://imzhenyu.github.io/about/), [Flavio Junqueira](https://github.com/fpj), [João Leitão](http://asc.di.fct.unl.pt/~jleitao/research.php), [Daniel Porto](https://sites.google.com/site/danielporto/), [Nuno Preguiça](http://asc.di.fct.unl.pt/~nmp/), [Viktor Vafeiadis](https://www.mpi-sws.org/~viktor/), and [Lidong Zhou](https://www.microsoft.com/en-us/research/people/lidongz/). 
+
+### Open positions for prospective students
+I am looking forward to working with talent students who are interested in overcoming challenges in systems research, and want to pursue graduate degrees. In addition, I am happy to supervise bachelor thesis projects. Feel free to send messages to chenglinkcs@gmail.com, if you want to contact me or you can stop by my office (Room 601, High Performance Computing Center, East Campus, USTC).
 
 ### Research projects
 
-#### Building fast and consistent (geo-)replicated systems
+#### Ongoing projects
+
+##### Building fast and consistent (geo-)replicated systems
 
 Geo-replication, replicating data at geo-graphically dispersed data centers, is a major solution for popular online services to scale themselves to meet the needs of their increasingly growing user base. With this technique, users contact with a nearby data center to get fast response, and coordination among all data centers is required to keep data globally consistent. Due to the high cost of exchanging message in a wide area network, however, offering low latency and maintaining strong consistency can not be achieved simultaneously. As a result, many systems restort to use weak consistency model (eventual consistency), in which each data center independently processes requests and resolves conflicts much later, to avoid immediate coordination for each request. In this project, we proposed a solution allowing multi-level consistency semantics to co-exist in one system. 
 
@@ -27,10 +33,27 @@ Replication has been widely adopted to build highly scalable services, but this 
 - Minimizing Coordination in Replicated Systems[pdf](https://people.mpi-sws.org/~chengli/papers/a8-Li.pdf). Cheng Li, João Leitão, Allen Clement, Nuno Preguiça and Rodrigo Rodrigues, In Proceedings of the Workshop on on Principles and Practice of Consistency for Distributed Data (PaPoC'15), Bordeaux, France
 - Building Fast and Consistent (Geo)Replicated Systems: from Principles to Practice [pdf](https://people.mpi-sws.org/~chengli/thesis/final_version_thesis_cheng.pdf). Cheng Li. PhD Thesis. MPI-SWS. Defended in May 2016
 
-#### Fast In-memory Key-Value Stores
+##### Scaling logging and recovery in databases on multi-core
 
+Write-ahead-log (WAL) is a key technique used in databases to ensure data durability and maintain recovery consistency in presence of failures. However, the traditional design sequentially flushes log entries into a single log data structure and thus is not scalable. Moreover, it imposes stronger ordering constraints over transactions than their actual dependencies. When recovering from a failure, a sequential scan must be performed to retrieve transactions whose updates were not persistent and apply them in a serial order. The recovery process is slow since it does not take advantage of parallelisms enabled by multi-core machines at all. In this project, we attempt to design a scalable logging method to relax ordering constraints of logged transactions so that we can maintain a set of distributed logs that can be written and read in parallel.
 
-#### Finding and recovering from concurrency bugs
+##### Fast In-memory Key-Value Stores
+
+In-memory key-value stores have been intensively integrated into many applications by major Internet service providers such as Amazon, Faceook, Twitter and so on, to offer fast responses. Most of kv store implementations opimitize performance for read-intensive workloads. However, more recently, studies show that a wide range of applications demonstrate a significant amount of updates and scans in their workloads, which perform poorly w.r.t state-and-the-art solutions. In this project, we aim to build a scalable in-memory kv store that scales well for update and scanning queries. To achieve this, we have to solve two challenges: (a) using scan-friendly index data structure like SkipList without compromising the speed of read and write queries; and (b) reducing write-write conflicts in presence of high concurrency and avoiding cache line transfers across cpu cores.
+
+- Fast Scans and Updates on In-memory Key Value Stores (Under review)
+
+#### Past projects
+
+##### Resource-efficent Fault Tolerance
+We present a new technique for designing distributed protocols for building reliable stateful services called Visigoth Fault Tolerance (VFT). VFT introduces the Visigoth model, which makes it possible to calibrate the timing assumptions of a system using a threshold of slow processes or messages, and also to distinguish between non-malicious arbitrary faults and correlated attack scenarios. This enables
+solutions that leverage the characteristics of data center systems, namely their secure environment and predictable performance, in order to allow replicated systems to be more efficient with respect to the utilization of resources than those designed under asynchrony and Byzantine assumptions, while avoiding the need to make a system synchronous, or to restrict failure modes to silent crashes. We
+implemented a VFT protocol for a state machine replication library, and ran several benchmarks. Our evaluation shows that VFT has comparable performance to existing schemes and brings significant benefits in terms of the throughput per dollar, i.e., the server cost for sustaining a certain level of request execution.
+
+-Visigoth Fault Tolerance[pdf](https://people.mpi-sws.org/~chengli/papers/a8-porto.pdf)[technical report](https://people.mpi-sws.org/~chengli/trs/vftTR.pdf). Daniel Porto, João Leitão, Cheng Li, Aniket Kate, Allen Clement, Flavio Junqueira and Rodrigo Rodrigues, In Proceedings of of the European Conference on Computer Systems (EuroSys'15), Bordeaux, France
+
+##### Finding and recovering from concurrency bugs
+
 When analyzing bug reports from the bug database of MySQL, a highly concurrent application, we found a very interesting thing: some concurrency bugs when triggered firstly silently corrupted internal states but became visible to users much later. We named this class of bugs latent bugs. Detecting latent bugs is a challenge, but it also provides an oppotunity to recover latent bugs before they are seen by users. Currently we're trying to build a novel tool to detect latent bugs. Our main idea is to check whether the concurrent executions are linearizable by comparing the output and the internal states after concurrent executions and sequential executions. Once the detector is built, we will use it at run-time with the goal of allowing transparent recovery for the latent concurrency bugs. 
 
 - Finding Complex Concurrency Bugs in Large Multi-Threaded Applications [pdf](https://people.mpi-sws.org/~chengli/papers/eurosys11-pike.pdf). Pedro Fonseca, Cheng Li, and Rodrigo Rodrigues, In Proceedings of the 6th European Professional Society on Computer Systems (EuroSys 2011), Salzburg, Austria
@@ -43,38 +66,4 @@ When analyzing bug reports from the bug database of MySQL, a highly concurrent a
 - ICAC 2017 reviewer 2017
 - DSN 2017 reviewer 2017
 
-### Collaborations
 
-It is my great honor to work with the following brilliant computer scientists: Allen Clement, Pedro Fonseca,João Leitão, Johannes Gehrke, Daniel Porto , Nuno Preguiça, and Viktor Vafeiadis.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mr-cheng-li/mr-cheng-li.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
