@@ -8,7 +8,16 @@ In 2016, I obtained my PhD degree from the Dependable Systems Group at the [Max 
 
 ### Collaborations
 
-It is my great honor to work with the following brilliant computer scientists (sorted by last name in an alphabetical order): [Allen Clement](http://www.mpi-sws.org/~aclement/), [Miguel Castro](https://www.microsoft.com/en-us/research/people/mcastro/), [Pedro Fonseca](https://homes.cs.washington.edu/~pfonseca/), [Johannes Gehrke](http://www.cs.cornell.edu/johannes/), [Zhenyu Guo](https://imzhenyu.github.io/about/), [Flavio Junqueira](https://github.com/fpj), [João Leitão](http://asc.di.fct.unl.pt/~jleitao/research.php), [Daniel Porto](https://sites.google.com/site/danielporto/), [Nuno Preguiça](http://asc.di.fct.unl.pt/~nmp/), [Viktor Vafeiadis](https://www.mpi-sws.org/~viktor/), and [Lidong Zhou](https://www.microsoft.com/en-us/research/people/lidongz/). 
+It is my great honor to work with the following brilliant computer scientists (sorted by last name in an alphabetical order): [Yungang Bao](http://asg.ict.ac.cn/baoyg/), [Allen Clement](http://www.mpi-sws.org/~aclement/), [Miguel Castro](https://www.microsoft.com/en-us/research/people/mcastro/), [Pedro Fonseca](https://homes.cs.washington.edu/~pfonseca/), [Johannes Gehrke](http://www.cs.cornell.edu/johannes/), [Zhenyu Guo](https://imzhenyu.github.io/about/), [Flavio Junqueira](https://github.com/fpj), [João Leitão](http://asc.di.fct.unl.pt/~jleitao/research.php), [Daniel Porto](https://sites.google.com/site/danielporto/), [Nuno Preguiça](http://asc.di.fct.unl.pt/~nmp/), [Viktor Vafeiadis](https://www.mpi-sws.org/~viktor/), and [Lidong Zhou](https://www.microsoft.com/en-us/research/people/lidongz/). 
+
+### Current students
+- Youxu Chen (co-advised PhD candidate)
+- Youhui Bai (co-advised Master)
+- Xinyang Shao (co-advised Master)
+- Jingbo Su (co-advised Master)
+
+### Previous students
+- David Lopes (co-advised Master)
 
 ### Open positions for prospective students
 I am looking forward to working with talent students who are interested in overcoming challenges in systems research, and want to pursue graduate degrees. In addition, I am happy to supervise bachelor thesis projects. Feel free to send messages to chenglinkcs@gmail.com, if you want to contact me or you can stop by my office (Room 601, High Performance Computing Center, East Campus, USTC).
@@ -50,7 +59,7 @@ We present a new technique for designing distributed protocols for building reli
 solutions that leverage the characteristics of data center systems, namely their secure environment and predictable performance, in order to allow replicated systems to be more efficient with respect to the utilization of resources than those designed under asynchrony and Byzantine assumptions, while avoiding the need to make a system synchronous, or to restrict failure modes to silent crashes. We
 implemented a VFT protocol for a state machine replication library, and ran several benchmarks. Our evaluation shows that VFT has comparable performance to existing schemes and brings significant benefits in terms of the throughput per dollar, i.e., the server cost for sustaining a certain level of request execution.
 
--Visigoth Fault Tolerance [[pdf](https://people.mpi-sws.org/~chengli/papers/a8-porto.pdf)][[technical report](https://people.mpi-sws.org/~chengli/trs/vftTR.pdf)]. Daniel Porto, João Leitão, Cheng Li, Aniket Kate, Allen Clement, Flavio Junqueira and Rodrigo Rodrigues, In Proceedings of of the European Conference on Computer Systems (EuroSys'15), Bordeaux, France
+- Visigoth Fault Tolerance [[pdf](https://people.mpi-sws.org/~chengli/papers/a8-porto.pdf)][[technical report](https://people.mpi-sws.org/~chengli/trs/vftTR.pdf)]. Daniel Porto, João Leitão, Cheng Li, Aniket Kate, Allen Clement, Flavio Junqueira and Rodrigo Rodrigues, In Proceedings of of the European Conference on Computer Systems (EuroSys'15), Bordeaux, France
 
 ##### Finding and recovering from concurrency bugs
 
