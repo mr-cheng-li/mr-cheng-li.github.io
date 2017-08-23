@@ -1,8 +1,14 @@
-## Welcome to GitHub Pages
+## Welcome to Cheng Li's Website
 
-You can use the [editor on GitHub](https://github.com/mr-cheng-li/mr-cheng-li.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Most recently, I have joined the Department of Computer Science at University of Science and Technology of China (USTC) as a research professor. My research interests lie in various topics related to computer systems such as operating systems, distributed systems, databases and etc, particularly in improving performance, consistency, fault tolerance, and availability of the above mentioned systems.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Prior to joining USTC, I was an associated researcher with my PhD supervisor [Rodrigo Rodrigues](http://www.gsd.inesc-id.pt/~rodrigo/) at [INESC-ID, Portugal](http://www.gsd.inesc-id.pt/), and a senior member of technical staff at [Oracle Labs Swiss](https://labs.oracle.com/pls/apex/f?p=94065:23:2478385225960::NO::P23_LOCATION_ID:69). 
+
+In 2016, I obtained my PhD degree from the Dependable Systems Group at the [Max Planck Institute for Software Sytems (MPI-SWS)](www.mpi-sws.org) and [Saarland University](http://www.cs.uni-saarland.de/) in Germany. Before studying at MPI-SWS, I obtained my bachelor degree from [Nankai University](http://nankai.en.school.cucas.cn/) in 2009.
+
+### Open positions
+
+
 
 ### Markdown
 
