@@ -10,6 +10,9 @@ In 2016, I obtained my PhD degree from the Dependable Systems Group at the [Max 
 
 It is my great honor to work with the following brilliant computer scientists (sorted by last name in an alphabetical order): [Yungang Bao](http://asg.ict.ac.cn/baoyg/), [Allen Clement](http://www.mpi-sws.org/~aclement/), [Miguel Castro](https://www.microsoft.com/en-us/research/people/mcastro/), [Pedro Fonseca](https://homes.cs.washington.edu/~pfonseca/), [Johannes Gehrke](http://www.cs.cornell.edu/johannes/), [Zhenyu Guo](https://imzhenyu.github.io/about/), [Flavio Junqueira](https://github.com/fpj), [João Leitão](http://asc.di.fct.unl.pt/~jleitao/research.php), [Daniel Porto](https://sites.google.com/site/danielporto/), [Nuno Preguiça](http://asc.di.fct.unl.pt/~nmp/), [Viktor Vafeiadis](https://www.mpi-sws.org/~viktor/), and [Lidong Zhou](https://www.microsoft.com/en-us/research/people/lidongz/). 
 
+### News
+- [Sep-05-2017] Congrats to Youxu on his research abstract accepted by [the Student Research Competition at SOSP 2017](https://www.sigops.org/sosp/sosp17/src.html). In this project, we explore data correlations between files to seek opportunities for prefetching metadata of correlated files, in order to scale distributed file systems.
+
 ### Current students
 - Youxu Chen (co-advised PhD candidate)
 - Youhui Bai (co-advised Master)
@@ -41,6 +44,10 @@ Replication has been widely adopted to build highly scalable services, but this 
 
 - Minimizing Coordination in Replicated Systems [[pdf](https://people.mpi-sws.org/~chengli/papers/a8-Li.pdf)]. Cheng Li, João Leitão, Allen Clement, Nuno Preguiça and Rodrigo Rodrigues, In Proceedings of the Workshop on on Principles and Practice of Consistency for Distributed Data (PaPoC'15), Bordeaux, France
 - Building Fast and Consistent (Geo)Replicated Systems: from Principles to Practice [[pdf](https://people.mpi-sws.org/~chengli/thesis/final_version_thesis_cheng.pdf)]. Cheng Li. PhD Thesis. MPI-SWS. Defended in May 2016
+
+##### Scaling distributed file systems via prefetching metadata of correlated files
+
+Distributed file systems (dfs) have become key data storage components to building scalable Internet services. In these systems, normally, files and their metadata are decoupled so that a dedicated metadata server (mds) is responsible for fetching metadata before letting clients access files directly from data server. A survey identified that the number of IOs to mds is substantial and accounts for 50% in the overall IOs to the whole dfs. As a result, the performance of mds is very crucial to scale dfs. In this project, we explore the potential of correlating files and prefetching their metadata by a single metadata read to reduce IO traffic to mds.
 
 ##### Scaling logging and recovery in databases on multi-core
 
@@ -75,4 +82,5 @@ When analyzing bug reports from the bug database of MySQL, a highly concurrent a
 - ICAC 2017 reviewer 2017
 - DSN 2017 reviewer 2017
 
-
+### Teaching
+- Principles and Techniques of Compiler, USTC, Fall, 2017 (with [Prof. Yuezhang](http://staff.ustc.edu.cn/~yuzhang/))
