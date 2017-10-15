@@ -23,7 +23,7 @@ It is my great honor to work with the following brilliant computer scientists (s
 - David Lopes (co-advised Master)
 
 ### Open positions for prospective students
-I am looking forward to working with talent students who are interested in overcoming challenges in systems research, and want to pursue graduate degrees. In addition, I am happy to supervise bachelor thesis projects. Feel free to send messages to chenglinkcs@gmail.com, if you want to contact me or you can stop by my office (Room 601, High Performance Computing Center, East Campus, USTC).
+I am looking forward to working with talent students who are interested in overcoming challenges in systems research, and want to pursue graduate degrees. In addition, I am happy to supervise bachelor thesis projects. Feel free to send messages to chengli7@ustc.edu.cn or chenglinkcs@gmail.com, if you want to contact me or you can stop by my office (Room 601, High Performance Computing Center, East Campus, USTC).
 
 ### Research projects
 
@@ -85,4 +85,4 @@ When analyzing bug reports from the bug database of MySQL, a highly concurrent a
 
 ### Teaching
 - Principles and Techniques of Compiler, USTC, Fall, 2017 (with [Prof. Yuezhang](http://staff.ustc.edu.cn/~yuzhang/))
-- Systems Seminar, USTC, Fall, 2017
+- [Systems Seminar](https://mr-cheng-li.github.io/sys_reading_group), USTC, Fall, 2017
