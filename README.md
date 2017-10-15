@@ -76,6 +76,7 @@ When analyzing bug reports from the bug database of MySQL, a highly concurrent a
 - A study of the Internal and External Effects of Concurrency Bugs [[pdf](https://people.mpi-sws.org/~chengli/papers/bug_study_dsn2010.pdf)]. Pedro Fonseca, Cheng Li, Vishal Singhal and Rodrigo Rodrigues, In Proceedings of the DSN 2010 - 40th IEEE/IFIP International Conference on Dependable Systems and Networks, Chicago, USA
 
 ### Professional activities (recent)
+- ACM SOSP Poster Session Co-Chair 2017 (with Gernot Heiser)
 - ACM Transactions on Storage reviewer
 - IEEE/ACM Transactions on Networking reviewer
 - APSys 2017 PC member 2017
