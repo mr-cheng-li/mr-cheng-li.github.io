@@ -84,5 +84,5 @@ When analyzing bug reports from the bug database of MySQL, a highly concurrent a
 - DSN 2017 reviewer 2017
 
 ### Teaching
-- Principles and Techniques of Compiler, USTC, Fall, 2017 (with [Prof. Yuezhang](http://staff.ustc.edu.cn/~yuzhang/))
+- Principles and Techniques of Compiler, USTC, Fall, 2017 (with [Prof. Yu Zhang](http://staff.ustc.edu.cn/~yuzhang/))
 - [Systems Seminar](https://mr-cheng-li.github.io/sys_reading_group), USTC, Fall, 2017
