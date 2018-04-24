@@ -43,6 +43,7 @@ I am looking forward to working with talent students who are interested in overc
 - Xiaoniu Song (Bachelor)
 - Zewen Jin (Bachelor)
 - Chaoyi Ruan (Bachelor)
+- Haoming Luo (Bachelor)
 
 ### Previous students
 - David Lopes (co-advised Master)
