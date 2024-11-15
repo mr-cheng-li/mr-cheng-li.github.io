@@ -7,6 +7,7 @@ Before joining USTC, I was an associated researcher with my PhD supervisor [Rodr
 In 2016, I obtained my PhD degree from the Dependable Systems Group at the [Max Planck Institute for Software Sytems (MPI-SWS)](www.mpi-sws.org) and [Saarland University](http://www.cs.uni-saarland.de/) in Germany. Before studying at MPI-SWS, I obtained my bachelor's degree from [Nankai University](http://nankai.en.school.cucas.cn/) in 2009.
 
 ### News
+- [Nov-15-2024] Our paper "PolyBase: Adapting to Data Affinity Changes in Geo-Replicated Database via Row-Level Paxos-Group Affiliation Re-Assignment" has been accepted to VLDB 2025! Congratulations to Chaoyi Ruan!
 - [Oct-18-2024] Congratulations to Chaoyi Ruan for successfully defending his PhD dissertation! The title is "Design and Optimization of Resource Scaling and High Availability for Cloud-Native Databases".
 - [Sept-20-2024] Our paper "VPTQ: Extreme Low-bit Vector Post-Training Quantization for Large Language Models" has been accepted to the EMNLP 2024 Main Conference! Congratulations to Yifei Liu!
 - [July-8-2024] Our paper "Eliminating Data Processing Bottlenecks in GNN Training over Large Graphs via Two-level Feature Compression" has been accepted to VLDB 2024! Congratulations to Yuxin Ma and Ping Gong!
