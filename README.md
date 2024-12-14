@@ -15,7 +15,7 @@ In 2016, I obtained my PhD degree from the Dependable Systems Group at the [Max 
 - [July-8-2024] Our paper "Eliminating Data Processing Bottlenecks in GNN Training over Large Graphs via Two-level Feature Compression" has been accepted to VLDB 2024! Congratulations to Yuxin Ma and Ping Gong!
 - [Mar-22-2024] Our paper "Cuber: Constraint-Guided Parallelization Plan Generation for Deep Learning Training" has been accepted to OSDI 2024! Congratulations to Zhiqi Lin!
 
-### Publications
+### Selected Publications (Full List: [Google Scholar](https://scholar.google.com/citations?hl=en&user=3Fdv_mIAAAAJ), [DBLP](https://dblp.org/pid/16/6465-1.html))
 - TCCL: Automated Collective Communication Tuning for Accelerating Distributed and Parallel DNN Training [[pdf](https://mr-cheng-li.github.io/)]. *Guanbin Xu, Zhihao Le, Yinhe Chen, Zhiqi Lin, Zewen Jin, Youshan Miao, Cheng Li*. To appear in Proceedings of the 22nd USENIX Symposium on Networked Systems Design and Implementation (**NSDI 2025**).
 - BigMac: A Light All-to-All Mixture-of-Experts Model Structure for Fast Training and Inference [[pdf](https://mr-cheng-li.github.io/)]. *Zewen Jin, Shengnan Wang, Jiaan Zhu, Hongrui Zhan, Youhui Bai, Lin Zhang, Zhenyu Ming, Cheng Li*. To appear in Proceedings of the 39th Annual AAAI Conference on Artificial Intelligence (**AAAI 2025**).
 - Eliminating Data Processing Bottlenecks in GNN Training over Large Graphs via Two-level Feature Compression [[pdf](https://doi.org/10.14778/3681954.368196)]. *Yuxin Ma, Ping Gong, Tianming Wu, Jiawei Yi, Chengru Yang, Cheng Li, Qirong Peng, Guiming Xie, Yongcheng Bao, Haifeng Liu, Yinlong Xu*. In Proceedings of the VLDB Endowment, Volume 17, Issue 11 (**VLDB 2024**).
