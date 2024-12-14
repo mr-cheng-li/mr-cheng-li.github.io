@@ -7,6 +7,8 @@ Before joining USTC, I was an associated researcher with my PhD supervisor [Rodr
 In 2016, I obtained my PhD degree from the Dependable Systems Group at the [Max Planck Institute for Software Sytems (MPI-SWS)](www.mpi-sws.org) and [Saarland University](http://www.cs.uni-saarland.de/) in Germany. Before studying at MPI-SWS, I obtained my bachelor's degree from [Nankai University](http://nankai.en.school.cucas.cn/) in 2009.
 
 ### News
+- [Dec-11-2024] Our paper "TCCL: Automated Collective Communication Tuning for Accelerating Distributed and Parallel DNN Training" has been accepted to NSDI 2025! Congratulations to Guanbin Xu!
+- [Dec-10-2024] Our paper "BigMac: A Light All-to-All Mixture-of-Experts Model Structure for Fast Training and Inference" has been accepted to AAAI 2025! Congratulations to Zewen Jin!
 - [Nov-15-2024] Our paper "PolyBase: Adapting to Data Affinity Changes in Geo-Replicated Database via Row-Level Paxos-Group Affiliation Re-Assignment" has been accepted to VLDB 2025! Congratulations to Chaoyi Ruan!
 - [Oct-18-2024] Congratulations to Chaoyi Ruan for successfully defending his PhD dissertation! The title is "Design and Optimization of Resource Scaling and High Availability for Cloud-Native Databases".
 - [Sept-20-2024] Our paper "VPTQ: Extreme Low-bit Vector Post-Training Quantization for Large Language Models" has been accepted to the EMNLP 2024 Main Conference! Congratulations to Yifei Liu!
@@ -14,6 +16,8 @@ In 2016, I obtained my PhD degree from the Dependable Systems Group at the [Max 
 - [Mar-22-2024] Our paper "Cuber: Constraint-Guided Parallelization Plan Generation for Deep Learning Training" has been accepted to OSDI 2024! Congratulations to Zhiqi Lin!
 
 ### Publications
+- TCCL: Automated Collective Communication Tuning for Accelerating Distributed and Parallel DNN Training [[pdf](https://mr-cheng-li.github.io/)]. *Guanbin Xu, Zhihao Le, Yinhe Chen, Zhiqi Lin, Zewen Jin, Youshan Miao, Cheng Li*. To appear in Proceedings of the 22nd USENIX Symposium on Networked Systems Design and Implementation (**NSDI 2025**).
+- BigMac: A Light All-to-All Mixture-of-Experts Model Structure for Fast Training and Inference [[pdf](https://mr-cheng-li.github.io/)]. *Zewen Jin, Shengnan Wang, Jiaan Zhu, Hongrui Zhan, Youhui Bai, Lin Zhang, Zhenyu Ming, Cheng Li*. To appear in Proceedings of the 39th Annual AAAI Conference on Artificial Intelligence (**AAAI 2025**).
 - Eliminating Data Processing Bottlenecks in GNN Training over Large Graphs via Two-level Feature Compression [[pdf](https://doi.org/10.14778/3681954.368196)]. *Yuxin Ma, Ping Gong, Tianming Wu, Jiawei Yi, Chengru Yang, Cheng Li, Qirong Peng, Guiming Xie, Yongcheng Bao, Haifeng Liu, Yinlong Xu*. In Proceedings of the VLDB Endowment, Volume 17, Issue 11 (**VLDB 2024**).
 - Noctua: Towards Automated and Practical Fine-grained Consistency Analysis [[pdf](https://doi.org/10.1145/3627703.3629570)]. *Kai Ma, Cheng Li, Enzuo Zhu, Ruichuan Chen, Feng Yan, Kang Chen*. In Proceedings of the Nineteenth European Conference on Computer Systems (**EuroSys 2024**).
 - nnScaler: Constraint-Guided Parallelization Plan Generation for Deep Learning Training [[pdf](https://www.usenix.org/system/files/osdi24-lin-zhiqi.pdf)]. *Zhiqi Lin, Youshan Miao, Quanlu Zhang, Fan Yang, Yi Zhu, Cheng Li, Saeed Maleki, Xu Cao, Ning Shang, Yilei Yang, Weijiang Xu, Mao Yang, Lintao Zhang, Lidong Zhou*. In Proceedings of the 18th USENIX Symposium on Operating Systems Design and Implementation (**OSDI 2024**).
